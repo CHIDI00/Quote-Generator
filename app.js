@@ -26,7 +26,7 @@ const getQuote = function () {
 };
 
 const speech = function() {
-  let speechResult = new SpeechSynthesisUtterance(`${quote.textContent} by ${author.textContent}`);
+  let speechResult = new SpeechSynthesisUtterance(`${quote.textContent}. by ${author.textContent}`);
   // speechResult.voice = speechSynthesis.getVoices()[2]
   speechSynthesis.speak(speechResult)
 }
