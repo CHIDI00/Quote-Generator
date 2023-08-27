@@ -39,7 +39,7 @@ body {
 }
 
 .quote_section .quote {
-  word-break: break-all;
+  word-break: keep-all;
   font-size: 20px;
   text-align: center;
 }
