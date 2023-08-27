@@ -25,13 +25,14 @@ const getQuote = function () {
 };
 
 const speech = function() {
-  let speechResult = new SpeechSynthesisUtterance(`${quote.textContent}. by ${author.textContent}`);
+  let speechResult = new SpeechSynthesisUtterance(`${quote.textContent} by ${author.textContent}`);
   speechSynthesis.speak(speechResult)
 }
 
 const copyQuote = function () {
   navigator.clipboard.writeText(quote.textContent);
 }
+
 
 quoteBtn.addEventListener('click', getQuote);
 speechBtn.addEventListener('click', speech);
