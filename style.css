@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  padding: 30px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 18px 18px 2px rgba(137, 43, 226, 0.521);
+  border: 2px solid blueviolet;
+}
+
+.app_name {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.quote_content {
+  margin: 35px 0;
+}
+
+.quote_section {
+  display: flex;
+  justify-content: center;
+}
+
+.quote_section .quote {
+  word-break: break-all;
+  font-size: 20px;
+  text-align: center;
+}
+
+.quote_section i {
+  font-size: 15px;
+  color: blueviolet;
+}
+
+.quote_section i:first-child {
+  margin: 3px 10px 0 0;
+}
+
+.quote_section i:last-child {
+  margin: 0 0 3px 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.author {
+  display: flex;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.author span:first-child {
+  font-family: monospace;
+  margin: -7px 5px 0 0;
+}
+
+.quote_buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background .4s;
+  color: #000;
+  cursor: pointer;
+}
+
+.buttons div:hover {
+  background: blueviolet;
+  color: #fff;
+}
+
+.new_quoteBtn {
+  padding: 10px;
+  border: 2px solid blueviolet;
+  background: #fff;
+  border-radius: 5px;
+  color: blueviolet;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.new_quoteBtn:hover {
+  color: #fff;
+  background: blueviolet;
+}
